@@ -1,0 +1,52 @@
+{
+  "title": "AnyDesk Left CTRL <=> CMD",
+  "rules": [
+    {
+      "description": "AnyDesk Left CTRL <=> CMD",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_gui"
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.philandro\\.anydesk"
+              ]
+            }
+          ],
+          "to": [
+            {
+              "repeat": true,
+              "key_code": "left_control"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control"
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.philandro\\.anydesk"
+              ]
+            }
+          ],
+          "to": [
+            {
+              "repeat": true,
+              "key_code": "left_gui",
+              "halt": false,
+              "lazy": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
