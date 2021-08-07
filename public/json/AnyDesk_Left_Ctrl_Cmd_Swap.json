@@ -40,9 +40,7 @@
           "to": [
             {
               "repeat": true,
-              "key_code": "left_gui",
-              "halt": false,
-              "lazy": false
+              "key_code": "left_gui"
             }
           ]
         }
