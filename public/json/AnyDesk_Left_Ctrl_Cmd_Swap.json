@@ -7,7 +7,10 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_gui"
+            "key_code": "left_gui",
+            "modifiers": {
+                "optional": ["any"]
+            }
           },
           "conditions": [
             {
@@ -27,7 +30,10 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_control"
+            "key_code": "left_control",
+            "modifiers": {
+                "optional": ["any"]
+            }
           },
           "conditions": [
             {
