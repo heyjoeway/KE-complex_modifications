@@ -1,0 +1,30 @@
+{
+    "title": "Mission Control on Mouse Back+Forward",
+    "rules": [
+        {
+            "description": "Mission Control on Mouse Back+Forward",
+            "manipulators": [
+                {
+                    "from": {
+                        "simultaneous": [
+                            {
+                                "pointing_button": "button4"
+                            },
+                            {
+                                "pointing_button": "button5"
+                            }
+                        ],
+                        "simultaneous_options": {
+                            "to_after_key_up": [
+                                {
+                                    "apple_vendor_keyboard_key_code": "mission_control"
+                                }
+                            ]
+                        }
+                    },
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
