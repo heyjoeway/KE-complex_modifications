@@ -1,0 +1,24 @@
+{
+    "title": "Spotlight on CMD",
+    "rules": [
+        {
+            "description": "Spotlight on CMD",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "left_control"
+                    },
+                    "to": {
+                        "key_code": "left_control"
+                    },
+                    "to_if_alone": [
+                        {
+                            "apple_vendor_keyboard_key_code": "spotlight"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
