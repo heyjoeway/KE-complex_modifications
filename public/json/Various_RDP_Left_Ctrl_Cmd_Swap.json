@@ -1,8 +1,8 @@
 {
-  "title": "AnyDesk Left CTRL <=> CMD",
+  "title": "Left CTRL <=> CMD in Various RDP Programs",
   "rules": [
     {
-      "description": "AnyDesk Left CTRL <=> CMD",
+      "description": "Left CTRL <=> CMD in Various RDP Programs",
       "manipulators": [
         {
           "type": "basic",
@@ -16,7 +16,9 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.philandro\\.anydesk"
+                "^com\\.philandro\\.anydesk",
+                "^tv\\.parsec\\.www",
+                "^com\\.microsoft\\.rdc\\.macos"
               ]
             }
           ],
@@ -39,7 +41,9 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.philandro\\.anydesk"
+                "^com\\.philandro\\.anydesk",
+                "^tv\\.parsec\\.www",
+                "^com\\.microsoft\\.rdc\\.macos"
               ]
             }
           ],
